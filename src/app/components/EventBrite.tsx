@@ -1,6 +1,6 @@
 'use client'
 import Script from "next/script";
-import React, { useEffect } from 'react';
+import React from 'react';
 
 export type EventBriteProps = {
   eventId: string;

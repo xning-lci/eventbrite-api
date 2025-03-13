@@ -18,7 +18,9 @@ export const EventBrite = ({ eventId }: EventBriteProps) => {
         strategy="afterInteractive"
         onLoad={() => {
           console.log("Eventbrite Widget Script Loaded");
+          // @ts-expect-error do have
           if (window?.EBWidgets) {
+            // @ts-expect-error do have
             window?.EBWidgets.createWidget({
               widgetType: 'checkout',
               eventId: eventId,

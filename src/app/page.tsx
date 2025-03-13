@@ -14,7 +14,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <EventBrite eventId={'1284848910679'} />
+        <EventBrite eventId={'1284912922139'} />
     </div>
   );
 }

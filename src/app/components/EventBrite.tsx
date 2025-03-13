@@ -10,7 +10,7 @@ export const EventBrite = ({ eventId }: EventBriteProps) => {
 
   return (
     <>
-      <div id={`eventbrite-widget-container-${eventId}`} style={{width: '100%', height: '500px'}}></div>
+      <div id={`eventbrite-widget-container-${eventId}`} style={{width: '100%', height: '800px'}}></div>
 
       {/* 加载 Eventbrite 的 JS 脚本 */}
       <Script

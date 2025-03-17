@@ -27,9 +27,11 @@ export const EventBrite = ({ eventId }: EventBriteProps) => {
   const [orderId, setOrderId] = useState<string | undefined>("12013939213");
   const [orderDetails, setOrderDetails] = useState<OrderDetails>();
   useEffect(() => {
+    // @ts-expect-error script variable
     if (scriptReady && typeof window !== 'undefined' && window?.EBWidgets) {
       console.log('window.top === window.self', window.top === window.self)
       console.log('Initializing Eventbrite Widget');
+      // @ts-expect-error script variable
       window?.EBWidgets.createWidget({
         widgetType: 'checkout',
         eventId: eventId,
